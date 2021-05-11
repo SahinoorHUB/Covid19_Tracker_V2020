@@ -29,7 +29,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ********************************************************************
 ********************************************************************
 
-<img style="width: 100%;" src="https://raw.githubusercontent.com/SahinoorHUB/Covid19_Tracker/master/homepage-old-version.png"/>
+<img style="width: 100%;" src="https://raw.githubusercontent.com/SahinoorHUB/Covid19_Tracker_V2020/main/homepage-old-version.png"/>
 
 ********************************************************************
 ********************************************************************

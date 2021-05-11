@@ -1,0 +1,25 @@
+<app-covid19indiaindex [ISumData]="confirmedCasesIndian" [deathsData]="deaths" [dischargedData]="discharged"></app-covid19indiaindex>
+<div class="container-fluid gaap">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="neumorphism">
+                <app-redional-data [IregionalData]="IndiaTotalregionalData"></app-redional-data>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="neumorphism">
+                <app-redional-data-map [IregionalMapData]="IndiaTotalregionalMapData"></app-redional-data-map>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="container-fluid gaap">
+    <div class="row">
+        <div class="col">
+            <div class="neumorphism">
+                <app-timeline-confirmed-cases [indTimeline]='timelineIndian'></app-timeline-confirmed-cases>
+            </div>
+        </div>
+    </div>
+</div> -->
+<br><br>

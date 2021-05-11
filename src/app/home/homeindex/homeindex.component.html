@@ -1,0 +1,15 @@
+<div>
+    <div class="main">
+        <span class="intro-banner-vdo-play-btn">
+            <span class="ripple pinkBg"></span>
+        <span class="ripple pinkBg"></span>
+        <span class="ripple pinkBg"></span>
+        </span>
+    </div>
+    <div class="update-status">
+        <p>Update: {{dateTime}}</p>
+    </div>
+</div>
+<app-headline></app-headline>
+<app-world-live-data [appData]="ConfirmedData" [GDeaths]="DeathsData" [GRecovered]="RecoveredData"></app-world-live-data>
+<app-world-cases-comparison [worldsummary]="CountriesData"></app-world-cases-comparison>

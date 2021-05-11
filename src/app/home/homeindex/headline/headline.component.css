@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Medula+One&display=swap');
+.covid-head {
+    color: #161625;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Medula One', cursive;
+    font-size: 5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+span:first-child {
+    margin-right: 20px;
+  }
+  
+  span:last-child {
+    color: #161625;
+    background: #e4e4e473;
+    animation: fadeWhite 4s forwards;
+    animation-delay: 2s;
+    position: relative;
+  }
+  span:last-child:after {
+    content: "coronavirus";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    clip: rect(0, 900px, 0, 0);
+    background: #e4e4e473;
+    color: #161625;
+    animation: glitch 3s infinite alternate-reverse;
+    animation-delay: 4s;
+  }
+  span:last-child:before {
+    content: "coronavirus";
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    clip: rect(0, 900px, 0, 0);
+    background: #e4e4e473;
+    color: #161625;
+    animation: glitch 3s infinite alternate-reverse;
+    animation-delay: 4s;
+  }
+  
+  @keyframes fadeWhite {
+    100% {
+      color: #161625;
+    }
+  }
+  @keyframes glitch {
+    0% {
+      clip: rect(7px, 9999px, 75px, 0);
+    }
+    5% {
+      clip: rect(52px, 9999px, 90px, 0);
+    }
+    10% {
+      clip: rect(72px, 9999px, 51px, 0);
+    }
+    15% {
+      clip: rect(69px, 9999px, 45px, 0);
+    }
+    20% {
+      clip: rect(84px, 9999px, 29px, 0);
+    }
+    25% {
+      clip: rect(29px, 9999px, 60px, 0);
+    }
+    30% {
+      clip: rect(58px, 9999px, 42px, 0);
+    }
+    35% {
+      clip: rect(88px, 9999px, 91px, 0);
+    }
+    40% {
+      clip: rect(29px, 9999px, 19px, 0);
+    }
+    45% {
+      clip: rect(42px, 9999px, 73px, 0);
+    }
+    50% {
+      clip: rect(52px, 9999px, 85px, 0);
+    }
+    55% {
+      clip: rect(59px, 9999px, 22px, 0);
+    }
+    60% {
+      clip: rect(49px, 9999px, 26px, 0);
+    }
+    65% {
+      clip: rect(22px, 9999px, 77px, 0);
+    }
+    70% {
+      clip: rect(79px, 9999px, 87px, 0);
+    }
+    75% {
+      clip: rect(85px, 9999px, 94px, 0);
+    }
+    80% {
+      clip: rect(64px, 9999px, 86px, 0);
+    }
+    85% {
+      clip: rect(31px, 9999px, 10px, 0);
+    }
+    90% {
+      clip: rect(45px, 9999px, 1px, 0);
+    }
+    95% {
+      clip: rect(82px, 9999px, 5px, 0);
+    }
+    100% {
+      clip: rect(23px, 9999px, 94px, 0);
+    }
+  }
+  

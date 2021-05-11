@@ -1,0 +1,20 @@
+{
+  "/api": {
+    "target": "https://api.covid19api.com",
+    "secure": false,
+    "pathRewrite": {
+      "^/api": ""
+    },
+    "changeOrigin": true
+  },
+
+
+  "/indiaapi": {
+    "target": "https://api.rootnet.in/",
+    "secure": false,
+    "pathRewrite": {
+      "^/indiaapi": ""
+    },
+    "changeOrigin": true
+  }
+}

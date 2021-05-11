@@ -1,0 +1,16 @@
+p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0;
+}
+img {
+    -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  -ms-user-drag: none;
+  user-drag: none;
+}

@@ -1,0 +1,219 @@
+.world-map {
+    padding: 10px;
+   box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+    transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 10px;
+   background: #e0e5ec;
+}
+button { 
+  all: unset;
+}
+#faq .accordion .card {
+  border: 0.1rem solid #C4C4C4;
+  border-radius: .4rem;
+  overflow: hidden;
+  margin: 0 0 7px;
+}
+#faq .accordion .card .card-header {
+  border: none;
+  padding: 0;
+}
+#faq .accordion .card .card-header button {
+  background: #4f56c0 url("../../../../assets/images/UI-Minus-icon.png") no-repeat 95% center/30px;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 100%;
+  padding: 4px;
+}
+#faq .accordion .card .card-header button span {
+  display: block;
+  margin: 0 4rem 0 1.5rem;
+}
+#faq .accordion .card .card-header button:focus {
+  box-shadow: none;
+  outline: none;
+}
+#faq .accordion .card .card-header button.collapsed {
+  background: #FFFFFF url("../../../../assets/images/UI-Plus.png") no-repeat 95% center/18px 18px;
+  color: #4f56c0;
+}
+#faq .accordion .card .card-body {
+  font-size: 15px;
+}
+.btn{
+  border-radius: 3px;
+  background: #e0e5ec;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 16px;
+  color: rgba(42, 52, 84, 1);
+  text-decoration: none;
+}
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+::ng-deep .mat-stepper-horizontal, .mat-stepper-vertical {
+  background-color: #fff0;
+}
+
+/** button group styles **/
+.btn-group {
+  border-radius: 1rem;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+    transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  z-index: 999999;
+  position: absolute;
+}
+.btn-group__item {
+  border: none;
+  /* min-width: 30.55%; */
+  padding: 10px;
+  background-color: #eee;
+  cursor: pointer;
+  margin: 0;
+  box-shadow: inset 0px 0px 0px -15px rebeccapurple;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  font-size: 15px;
+  text-align: center;
+}
+.btn-group__item:last-child {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.btn-group__item:first-child {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+.btn-group__item:hover, .btn-group__item:focus {
+  color: rebeccapurple;
+  box-shadow: inset 0px -20px 0px -15px #4f56c0;
+}
+.btn-group__item:focus {
+  outline: none;
+}
+.btn-group__item--active:after {
+  opacity: 1;
+  -webkit-transform: translatey(-2px);
+          transform: translatey(-2px);
+}
+
+
+
+/* TABLE */
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+table tr:hover {
+  background-color: #dddddd !important;
+}
+table th,
+table td {
+  padding: .625em;
+}
+table tr td{
+  font-size: 15px;
+  line-height: 16px;
+}
+table tr th {
+  font-size: 15px;
+  line-height: 14px;
+}
+@media screen and (max-width: 600px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: .625em;
+  }
+  
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+}
+.table-data {
+  height: 74vh;
+    overflow-x: hidden;
+}
+.table-head tr{
+  background-color: #4f56c0 !important;
+  color: #fff;
+}
+.table-head tr:hover{
+  background-color: #4f56c0 !important;
+  color: #fff;
+}

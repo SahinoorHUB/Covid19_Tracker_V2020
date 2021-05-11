@@ -1,0 +1,69 @@
+div#chartdiv {
+  margin-top: 50px;
+}
+::ng-deep button.amcharts-range-selector-period-button {
+  /* min-width: 150px; */
+  padding: 10px 14px;
+  margin: 6px;
+  background: rgb(224 229 236);
+  border: none;
+  border-radius: 25px;
+  color: rgb(79 86 192);
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: -7px -7px 20px 0 rgba(255, 255, 255, 0.7), 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+::ng-deep button.amcharts-range-selector-period-button:focus {
+  outline: none;
+  border: none;
+}
+::ng-deep button.amcharts-range-selector-period-button:hover {
+  box-shadow: inset -7px -7px 20px 0 rgba(255, 255, 255, 0.7),
+    inset 7px 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+::ng-deep input.amcharts-range-selector-to-input {
+  /* display: block; */
+  max-width: 111px !important;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  /* font-size: 1rem; */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+::ng-deep input.amcharts-range-selector-to-input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+::ng-deep input.amcharts-range-selector-from-input {
+  /* display: block; */
+  max-width: 111px !important;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  /* font-size: 1rem; */
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+::ng-deep input.amcharts-range-selector-from-input:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}

@@ -1,0 +1,47 @@
+.neumorphism {
+    padding: 10px;
+    box-shadow:
+    -7px -7px 20px 0px #fff9,
+    -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002,
+    4px 4px 5px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,
+    inset 0px 0px 0px 0px #0001,
+    inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+     transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+    border-radius: 10px;
+    background: #e0e5ec;
+}
+.confirmed {
+    color: #fe073a;
+    font-size: 20px;
+}
+.discharged {
+    color: #27a043;
+    font-size: 20px;
+}
+.deceased {
+    color: #6c757d;
+    font-size: 20px;
+}
+.confirmed-hover {
+    border: 1px solid #fe073a;
+    background-image: url("../../../assets/images/confirmed---india.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100px;
+}
+.deceased-hover {
+    border: 1px solid #6c757d;
+    background-image: url("../../../assets/images/deaths.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100px;
+}
+.discharged-hover {
+    border: 1px solid #27a043;
+    background-image: url("../../../assets/images/recovered.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100px;
+}

@@ -1,0 +1,28 @@
+<h5>COVID-19 India Statistics Data</h5>
+<div class="form-group">
+  <input type="text" class="form-control" placeholder="Search States & Union Territories Name Here" [(ngModel)]="term">
+</div>
+<div class="custim-fixed">
+  <table>
+      <thead class="table-head">
+          <tr class="head-table">
+              <th scope="col" style="width: 20vw;">States & Union Territories</th>
+              <th scope="col">Total Confirmed</th>
+              <th scope="col">Total Recovered</th>
+              <th scope="col">Total Deceased</th>
+          </tr>
+      </thead>
+  </table>
+</div>
+<div class="table-data">
+  <table >
+      <tbody>
+          <tr *ngFor="let item of Indiaregionalrecord | filter:term">
+              <td style="width: 20vw;" data-label="States & Union Territories">{{ item.loc }}</td>
+              <td data-label="Total Confirmed">{{ item.totalConfirmed }}</td>
+              <td data-label="Total Recovered">{{ item.discharged }}</td>
+              <td data-label="Total Deceased">{{ item.deaths }}</td>
+          </tr>
+      </tbody>
+  </table>
+</div>

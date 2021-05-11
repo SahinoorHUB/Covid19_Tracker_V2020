@@ -1,0 +1,125 @@
+<div class="container-fluid mb-5" style="margin-top: 30px; margin-bottom: 20px;">
+    <div class="row">
+        <div class="col-md-7">
+            <div class="card card-bordered world-map">
+                <h5>Confirmed Deaths by Country, Territory, or Conveyance
+                </h5>
+                <div id="deathscase" style="width: 100%; height: 500px"></div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="card card-bordered world-map">
+                <h5>COVID-19 Coronavirus - FAQs</h5>
+                <div id="faq">
+                    <div class="accordion" id="accordionFAQ">
+                        <div class="card">
+                            <div class="card-header" id="heading1">
+                                <button class="" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <span>
+                                        What is a novel coronavirus?
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    <p>Coronaviruses (CoV) are a large family of viruses that cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS-CoV) and Severe Acute Respiratory Syndrome (SARS-CoV).
+                                        A novel coronavirus (nCoV) is a new strain that has not been previously identified in humans.<br>Common signs of infection include respiratory symptoms, fever, cough, shortness of breath and breathing difficulties.
+                                        In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney failure and even death.<br>The best way to prevent and slow down transmission is be well informed about the COVID-19
+                                        virus, the disease it causes and how it spreads. Protect yourself and others from infection by washing your hands or using an alcohol based rub frequently and not touching your face. Source: <a style="text-decoration: none;"
+                                            href="https://www.who.int/health-topics/coronavirus#tab=tab_1">WHO</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading2">
+                                <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <span>
+                                        What is the source of the virus?
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    Coronaviruses are a large family of viruses. Some cause illness in people, and others, such as canine and feline coronaviruses, only infect animals. Rarely, animal coronaviruses that infect animals have emerged to infect people and can spread between
+                                    people. This is suspected to have occurred for the virus that causes COVID-19. Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS) are two other examples of coronaviruses that originated
+                                    from animals and then spread to people. More information about the source and spread of COVID-19 is available on the Situation Summary: <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/cases-updates/summary.html"
+                                        style="text-decoration: none;">Source and Spread of the Virus.</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="heading3">
+                                <button class=" collapsed" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <span>
+                                        What are the symptoms of COVID-19?
+                                    </span>
+                                </button>
+                            </div>
+                            <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionFAQ">
+                                <div class="card-body">
+                                    The most common symptoms of COVID-19 are fever, tiredness, and dry cough. Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea. These symptoms are usually mild and begin gradually. Some people become infected but
+                                    don’t develop any symptoms and don't feel unwell. Most people (about 80%) recover from the disease without needing special treatment. Around 1 out of every 6 people who gets COVID-19 becomes seriously ill and develops
+                                    difficulty breathing. Older people, and those with underlying medical problems like high blood pressure, heart problems or diabetes, are more likely to develop serious illness. People with fever, cough and difficulty
+                                    breathing should seek medical attention.<br> Read more: <a target="_blank" href="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html" style="text-decoration: none;">COVID-19 Symptoms from CDC.gov.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a style="float: right;" [routerLink]="['/about']" class="btn">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 25px;">
+        <div class="col-md-8">
+            <div class="card card-bordered world-map">
+                <h5>COVID-19 Global Statistics Data</h5>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search Country Name Here" [(ngModel)]="term">
+                </div>
+                <div class="custim-fixed">
+                    <table>
+                        <thead class="table-head">
+                            <tr class="head-table">
+                                <th scope="col">Country</th>
+                                <th scope="col">Total Confirmed</th>
+                                <th scope="col">New Confirmed</th>
+                                <th scope="col">Total Deaths</th>
+                                <th scope="col">New Deaths</th>
+                                <th scope="col">Total Recovered</th>
+                                <th scope="col">New Recovered</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+                <div class="table-data">
+                    <table>
+                        <tbody>
+                            <tr *ngFor="let item of alldatacatagory | filter:term">
+                                <td data-label="Country">{{ item.Country }}</td>
+                                <td data-label="Total Confirmed">{{ item.TotalConfirmed }}</td>
+                                <td data-label="New Confirmed">{{ item.NewConfirmed }}</td>
+                                <td data-label="Total Deaths">{{ item.TotalDeaths}}</td>
+                                <td data-label="New Deaths">{{ item.NewDeaths }}</td>
+                                <td data-label="Total Recovered">{{ item.TotalRecovered }}</td>
+                                <td data-label="New Recovered">{{ item.NewRecovered }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card card-bordered world-map">
+                <h5>CCOVID-19 Coronavirus - Prevention</h5>
+                <app-prevention></app-prevention>
+                <div class="card card-bordered world-map" style="border: 1px solid red; text-align: justify;">
+                    <p style="font-size: 15px; color: red; margin-bottom: 0px; line-height: 18px;">If you develop a fever, cough, and have difficulty breathing, promptly seek medical care. Call in advance and tell your health provider as soon as possible for medical advice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>

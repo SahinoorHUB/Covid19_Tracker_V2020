@@ -1,0 +1,16 @@
+API Resources:-
+	1. https://covid-19-apis.postman.com
+	2. https://api.covid19india.org
+	3. https://ourworldindata.org/covid-cases?country=~IND
+	5. https://github.com/amodm/api-covid19-in
+
+COVID 19 API:-
+	1. GET World Total WIP:- https://api.covid19api.com/world/tota
+	2. Summary data updated daily:- https://api.covid19api.com/summary (All Countries)
+	-3. All data starting to end (every day):- https://api.rootnet.in/covid19-in/stats/history (India)
+	4. https://api.rootnet.in/covid19-in/stats/latest
+
+Reference:-
+	1. https://corona.topiks.ai
+	2. https://covidstat.info/home
+	3. https://www.covid19india.org
